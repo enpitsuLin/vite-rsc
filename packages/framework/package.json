@@ -1,0 +1,62 @@
+{
+  "name": "@vite-rsc/framework",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "exports": {
+    ".": {
+      "types": "./dist/server.d.ts",
+      "source": "./src/server.ts",
+      "default": "./dist/server.js"
+    },
+    "./browser": {
+      "types": "./dist/browser.d.ts",
+      "source": "./src/browser.ts",
+      "default": "./dist/browser.js"
+    },
+    "./client": {
+      "types": "./dist/client.d.ts",
+      "source": "./src/client.tsx",
+      "default": "./dist/client.js"
+    },
+    "./prerender": {
+      "types": "./dist/prerender.d.ts",
+      "source": "./src/prerender.ts",
+      "default": "./dist/prerender.js"
+    },
+    "./runtime.client": {
+      "types": "./dist/runtime.client.d.ts",
+      "source": "./src/runtime.client.ts",
+      "default": "./dist/runtime.client.js"
+    },
+    "./shared": {
+      "types": "./dist/shared.d.ts",
+      "source": "./src/shared.tsx",
+      "default": "./dist/shared.js"
+    }
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "peerDependencies": {
+    "react": "0.0.0-experimental-96c584661-20240412",
+    "react-dom": "0.0.0-experimental-96c584661-20240412",
+    "react-server-dom-diy": "0.0.0-experimental-15a3a5622-202404158"
+  },
+  "dependencies": {
+    "@hattip/core": "^0.0.45",
+    "rsc-html-stream": "^0.0.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "react": "0.0.0-experimental-96c584661-20240412",
+    "react-dom": "0.0.0-experimental-96c584661-20240412",
+    "react-server-dom-diy": "0.0.0-experimental-15a3a5622-202404158",
+    "typescript": "^5.4.5"
+  }
+}

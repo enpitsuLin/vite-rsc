@@ -1,0 +1,30 @@
+{
+  "name": "vite-rsc",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm --recursive build"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.16.0",
+    "@types/node": "^20.12.7",
+    "eslint": "^9.1.1",
+    "typescript": "^5.4.5"
+  },
+  "pnpm": {
+    "overrides": {
+      "react": "0.0.0-experimental-96c584661-20240412",
+      "react-dom": "0.0.0-experimental-96c584661-20240412",
+      "vite": "6.0.0-alpha.5"
+    },
+    "patchedDependencies": {
+      "react@0.0.0-experimental-96c584661-20240412": "patches/react@0.0.0-experimental-96c584661-20240412.patch"
+    }
+  }
+}

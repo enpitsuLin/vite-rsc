@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "jsx": "react-jsx",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "rootDir": ".",
+    "customConditions": ["source"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@vite-rsc/framework": ["../../packages/framework/src/server.ts"],
+      "@vite-rsc/framework/browser": ["../../packages/framework/src/browser.ts"],
+      "@vite-rsc/framework/client": ["../../packages/framework/src/client.tsx"],
+      "@vite-rsc/framework/prerender": ["../../packages/framework/src/prerender.ts"],
+      "@vite-rsc/framework/shared": ["../../packages/framework/src/shared.tsx"]
+    },
+    "resolvePackageJsonImports": true,
+    "types": [
+      "node",
+      "react/canary",
+      "react/experimental",
+      "react-dom/canary",
+      "react-dom/experimental",
+      "vite/client"
+    ],
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noEmit": true
+  },
+  "include": [
+    "drizzle.config.ts",
+    "postcss.config.cjs",
+    "server.js",
+    "tailwind.config.js",
+    "vite.config.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": ["node_modules/**/*", "dist/**/*"]
+}

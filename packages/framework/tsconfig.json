@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "jsx": "react-jsx",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "rootDir": "src",
+    "customConditions": [
+      "source"
+    ],
+    "module": "Preserve",
+    "moduleResolution": "Bundler",
+    "resolvePackageJsonImports": true,
+    "types": [
+      "node",
+      "react/canary",
+      "react/experimental",
+      "react-dom/canary",
+      "react-dom/experimental"
+    ],
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "declaration": true,
+    "declarationMap": true,
+    "outDir": "dist",
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  }
+}

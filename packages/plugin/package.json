@@ -1,0 +1,31 @@
+{
+  "name": "@vite-rsc/plugin",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@hattip/adapter-node": "0.0.45"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "unplugin-rsc": "^0.0.9",
+    "vite": "6.0.0-alpha.5"
+  }
+}
