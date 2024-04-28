@@ -11,7 +11,7 @@ export default function Layout({ children }: PropsWithChildren) {
 
         <link rel="manifest" href="/manifest.json" />
       </head>
-      <body className="flex flex-col h-screen bg-base-100 text-base-content overflow-y-auto">
+      <body>
         {children}
       </body>
     </html>

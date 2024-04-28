@@ -2,6 +2,7 @@ import react from '@vitejs/plugin-react'
 import { visualizer } from 'rollup-plugin-visualizer'
 import { defineConfig } from 'vite'
 import tsconfigPaths from 'vite-tsconfig-paths'
+import unocss from 'unocss/vite'
 
 import {
   reactServerPlugin,
@@ -75,5 +76,6 @@ export default defineConfig({
     tsconfigPaths(),
     react(),
     reactServerPlugin(),
+    unocss(),
   ],
 })

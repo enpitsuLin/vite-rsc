@@ -1,3 +1,3 @@
 export default function IndexPage() {
-  return <h2>Hello world</h2>
+  return <h2 className="text-pink">Hello world</h2>
 }

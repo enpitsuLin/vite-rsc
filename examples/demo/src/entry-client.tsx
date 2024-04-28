@@ -1,6 +1,7 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom/client'
 import { BrowserRouter, getInitialPayload } from '@vite-rsc/framework/browser'
+import 'uno.css'
 
 declare global {
   interface Window {
